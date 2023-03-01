@@ -1,16 +1,17 @@
-# [Soft UI Dashboard TALL Free](https://soft-ui-dashboard-tall.creative-tim.com/)
+# [Soft UI Dashboard TALL Free](https://www.creative-tim.com/product/soft-ui-dashboard-tall?AFFILIATE=128200)
 
-![version](https://img.shields.io/badge/version-1.0.0-blue.svg) 
-![license](https://img.shields.io/badge/license-MIT-blue.svg)
-[![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/soft-ui-dashboard-tall.svg)](https://github.com/creativetimofficial/soft-ui-dashboard-tall/issues?q=is%3Aopen+is%3Aissue) 
-[![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/soft-ui-dashboard-tall.svg)](https://github.com/creativetimofficial/soft-ui-dashboard-tall/issues?q=is%3Aissue+is%3Aclosed)
+- *Frontend ONLY Version*: [Soft UI Dashboard Tailwind](https://www.creative-tim.com/product/soft-ui-dashboard-tailwind?AFFILIATE=128200) `v1.0.3`
+- More [Laravel Starters](https://www.creative-tim.com/templates/laravel-free?AFFILIATE=128200) - `all free`
 
-*Frontend version*: Soft UI Dashboard Tailwind v1.0.3. More info at https://www.creative-tim.com/product/soft-ui-dashboard-tailwind
+<br />
+
 [ <img src="https://s3.amazonaws.com/creativetim_bucket/products/683/original/soft-ui-dashboard-tall.jpg?raw=true" width="100%" />](https://soft-ui-dashboard-tall.creative-tim.com/)
+
+<br />
 
 Speed up your web development with the Tailwind Admin Dashboard built for Laravel Framework 9.x and up.
 
-If you want to get more features, go PRO with [Soft UI Dashboard PRO Tall](https://www.creative-tim.com/product/soft-ui-dashboard-pro-tailwind).
+> For more features, **Go PRO** with [Soft UI Dashboard PRO Tall](https://www.creative-tim.com/product/soft-ui-dashboard-pro-tailwind?AFFILIATE=128200).
 
 ## Table of Contents
 * [Prerequisites](#prerequisites)
