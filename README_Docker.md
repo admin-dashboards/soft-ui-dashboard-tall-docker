@@ -47,3 +47,8 @@ You can access to workspace container:
 docker-compose exec -it workspace bash
 ```
 
+After the installation is complete, the next times you just need to type:
+
+```
+docker-compose up -d
+```
