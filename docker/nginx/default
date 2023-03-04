@@ -1,0 +1,42 @@
+add_header X-Frame-Options SAMEORIGIN;
+add_header X-XSS-Protection "1; mode=block";
+add_header X-Content-Type-Options nosniff;
+
+server {
+    listen 80;
+    server_name _;
+
+    client_max_body_size 100m;
+    client_header_buffer_size 64k;
+    large_client_header_buffers 4 64k;
+
+    #gzip
+    gzip_disable "msie6";
+    gzip_min_length 256;
+
+    access_log /dev/stdout;
+    error_log /dev/stderr;
+
+    root /usr/src/app/public;
+    index index.php;
+
+
+    location / {
+        try_files $uri $uri/ /index.php?$query_string;
+    }
+
+    error_page 404 /index.php;
+
+    location ~ \.php$ {
+        try_files $uri /index.php =404;
+        fastcgi_split_path_info ^(.+\.php)(/.+)$;
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_buffer_size 512k;
+        fastcgi_buffers 512 64k;
+        fastcgi_send_timeout 300;
+        fastcgi_read_timeout 300;
+    }
+}

@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  workspace:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/usr/src/app
+      - ./database:/database
+    ports:
+      - 8000:80
