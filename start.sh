@@ -1,0 +1,5 @@
+docker-compose exec workspace sh -c 'composer install && npm install && npm run build'
+docker-compose exec workspace sh -c 'php artisan key:generate'
+docker-compose exec workspace sh -c 'php artisan migrate --seed'
+docker-compose exec workspace sh -c 'php artisan storage:link'
+docker-compose exec workspace sh -c 'chmod -R 777 storage bootstrap/cache'
