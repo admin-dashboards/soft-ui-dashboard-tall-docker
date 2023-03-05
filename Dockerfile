@@ -18,18 +18,16 @@ RUN apt-get install -y nodejs
 # Copy nginx configuration file to the container
 COPY ./docker/nginx/default /etc/nginx/sites-available/default
 
+COPY . /usr/src/app/
+
 WORKDIR /usr/src/app/
-
-COPY . .
-
-RUN npm install && npm run build
-
-RUN composer install
 
 # Set permissions for storage and bootstrap directories
 RUN chmod -R 777 storage bootstrap/cache
 
+# WORKDIR /usr/src/app/
+
 # Expose port 80 for Nginx
 EXPOSE 80
 
-CMD service nginx start && php-fpm && npm run dev
+CMD service nginx start && php-fpm

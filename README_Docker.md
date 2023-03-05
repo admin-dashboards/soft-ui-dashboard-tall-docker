@@ -13,6 +13,12 @@ docker-compose up -d --build
 
 After docker setup everything, then run each command bellow:
 
+- Install npm & php packages: 
+
+```
+docker-compose exec workspace sh -c 'composer install && npm install && npm run build'
+```
+
 - Create app key:
 
 ```
