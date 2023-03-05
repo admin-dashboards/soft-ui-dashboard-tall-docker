@@ -1,11 +1,21 @@
-# [Soft UI Dashboard TALL Free](https://www.creative-tim.com/product/soft-ui-dashboard-tall?AFFILIATE=128200)
+# [Soft UI Dashboard TALL](https://www.creative-tim.com/product/soft-ui-dashboard-tall?AFFILIATE=128200) `Dockerized`
 
-With [Laravel Soft UI Dashboard](https://www.creative-tim.com/product/soft-ui-dashboard-tall?AFFILIATE=128200) , you're getting a fast and easy way to build Laravel apps, easily style them with `Tailwind` and write `Livewire` components with a dash of `Alpine.js`.  
-
-This free starter `takes care of` **authentication** and **user profile features** right out-of-the-box. No more writing boring code, you can now focus on the more complex aspects of your app. 
+With [Laravel Soft UI Dashboard](https://www.creative-tim.com/product/soft-ui-dashboard-tall?AFFILIATE=128200) , you're getting a fast and easy way to build Laravel apps, easily style them with `Tailwind` and write `Livewire` components with a dash of `Alpine.js`. This free starter `takes care of` **authentication** and **user profile features** right out-of-the-box. No more writing boring code, you can now focus on the more complex aspects of your app. 
 
 - 👉 *Frontend ONLY Version*: [Soft UI Dashboard Tailwind](https://www.creative-tim.com/product/soft-ui-dashboard-tailwind?AFFILIATE=128200) `v1.0.3`
 - 🎁 More [Laravel Starters](https://www.creative-tim.com/templates/laravel-free?AFFILIATE=128200) - `all free`
+
+<br />
+
+## Start with `Docker`
+
+```bash
+$ cp .env.example to .env      # Prepare the environment
+$ docker-compose up -d --build # Start the APP in Docker
+$ sh bash                      # Set up Laravel (migrate DB and the rest of the steps)
+```
+
+At this point, the app runs on port `8000`. For more information, please read the [detailed docs](./README_Docker.md).
 
 <br />
 
