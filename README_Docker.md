@@ -13,13 +13,17 @@ docker-compose up -d --build
 
 ### III. Setup
 
-#### If you want to setup auto automatic, just run:
+#### If you want to set up automatically, just run:
 
 ```
 sh start.sh
 ```
 
-#### If you want to setup as manual, plz run each command bellow:
+If a prompt is displayed, type yes.
+
+Access to: localhost:8000 then enjoy it!
+
+#### If you want to setup as manual, let's run each command under:
 
 - Install npm & php packages: 
 
